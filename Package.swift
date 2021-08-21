@@ -17,6 +17,9 @@ let package = Package(
         .target(
             name: "Armchair",
             path: "Source",
-            exclude: ["Info.plist", "Info-Localizable.plist"])
+            exclude: ["Info.plist", "Info-Localizable.plist"]),
+        .testTarget(
+            name: "ArmchairTests",
+            dependencies: ["Armchair"]),
     ]
 )
